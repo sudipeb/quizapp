@@ -16,11 +16,11 @@ class _QuizScreenState extends State<QuizScreen> {
   /// as it can lead to performance issues
   /// but for small apps its okay
   // var activescreen = StartScreen();
-  var activescreen = 'Start-screen';
+  var activescreen = 'start-screen';
 
   void switchScreen() {
     setState(() {
-      activescreen = 'Question-screen';
+      activescreen = 'question-screen';
     });
   }
 
