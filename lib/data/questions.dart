@@ -14,8 +14,8 @@ const questions = [
     'kolkata',
   ]),
   QuizQuestion('Who is the first person to land on the moon?', [
-    'neil armstrong',
     'buzz aldrin',
+    'neil armstrong',
     'yuri gagarin',
     'michael collins',
   ]),
