@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:quizapp/data/questions.dart';
 import 'package:quizapp/screens/questions_summary.dart';
 
@@ -46,7 +47,24 @@ class ResultScreen extends StatelessWidget {
             SizedBox(height: 10),
             QuestionsSummary(summaryData),
             SizedBox(height: 50),
-            TextButton(onPressed: onRestart, child: Text('restart the quiz')),
+            TextButton(
+              onPressed: onRestart,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.restart_alt_sharp,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  SizedBox(width: 5),
+                  Text(
+                    'restart the quiz',
+                    style: GoogleFonts.lato(color: Colors.white, fontSize: 20),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),

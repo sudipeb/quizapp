@@ -52,7 +52,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
                 answerText: answer,
                 onTap: () {
                   answerQuestion(answer);
-                  print(answer);
+                  
                 },
               );
             }),
